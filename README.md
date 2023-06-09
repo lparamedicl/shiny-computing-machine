@@ -5,8 +5,9 @@ vue js
 ## Project creation
 ```
 npm create vite@latest .
-    
-``` 
+```
+### next install vite modules
+```
 npm install
 ```
 
