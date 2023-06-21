@@ -13,6 +13,10 @@ const users = [
     }
 ]
 
-function (email, password) {
+const isAuthed = computed(() => {
+    return !!user.value
+})
+
+const onLogin (email, password) => {
     
 }
