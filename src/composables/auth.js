@@ -6,6 +6,7 @@ const users = [
         email: 'romashka@main.com',
         password: 'qwerty',
     }
+    
     {
         name: 'timoha',
         email: 'rofls@mac.com',
@@ -17,9 +18,15 @@ const isAuthed = computed(() => {
     return !!user.value
 })
 
-const onLogin (email, password) => ({
+const onLogin = (email, password) => {
     const u = user.find((val) => {
     return val.email == email && val.password == password})
 
+    if (!u) {
+        alert("scam")
+        return;
+    }
+
+    user.value = u;
     
-})
+}
