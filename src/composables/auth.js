@@ -18,5 +18,5 @@ const isAuthed = computed(() => {
 })
 
 const onLogin (email, password) => {
-    
+    const u = user.find((val) => )
 }
